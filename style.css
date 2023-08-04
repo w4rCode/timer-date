@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/full.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 25px 0px;
+}
+.content h1 span{
+    color: rgba(248, 174, 104, 0.986);
+}
+.content button{
+    width: 140px;
+    height: 40px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+   border: 2px solid #fff;
+   border-radius: 10px;}
+.launch-time{
+    display: flex;
+    justify-content: center;
+}
+.launch-time div{
+    flex-basis: 100px;
+    background-color: rgba(46, 44, 44, 0.144);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: .2s ease-in; 
+}
+.launch-time div:hover{
+    scale: 1.4;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+@media (max-width: 937px) { 
+.content h1{
+    font-size: 4.2rem;}
+    .launch-time{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+        .launch-time div{
+            width: 200PX;
+            margin-bottom: 20px;
+            flex-basis: 100px;
+            background-color: rgba(46, 44, 44, 0.144);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 30px;
+            transition: .2s ease-in; }
+}
+@media (max-width: 400px){
+    .content h1{
+        font-size: 3rem;
+    }
+    .launch-time{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
